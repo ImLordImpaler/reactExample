@@ -1,20 +1,20 @@
 import React, {Component} from 'react';
-;
+
 
 
 class DetailDish extends Component {
-    constructor(props){
-        super(props)
-    }
-
+    
     render(){
-        const dish = this.props.selectedDish.map((i)=>{
-                return(console.log(i));
+        const name = this.props.selectedDish1.comments.map((i) =>{
+            return(
+                    <div className='container'>
+                        <p>{i.author}</p>
+                    </div>
+            );
         });
-            
-        return(
-            <div ></div>
 
+        return(
+            <div> {name} </div>
         );
     }
 }

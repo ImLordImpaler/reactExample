@@ -1,5 +1,5 @@
 import React,  {Component}from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 import Menu from './components/MenuComponent'
 import {DISHES} from './shared/DishesInfo'
@@ -15,7 +15,7 @@ class App extends Component {
   render(){
     return(
         <div className='container'>
-            <Menu dishes = {this.state.dishes}/>
+            <Menu dishe1 = {this.state.dishes}/>
         </div>
     );
   }
